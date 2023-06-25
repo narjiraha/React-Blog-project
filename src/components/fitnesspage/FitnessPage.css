@@ -1,0 +1,170 @@
+.Fitness-page {
+  display: flex;
+  padding: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: #f2f2f2;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #ff3366;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px rgba(255, 51, 102, 0.3);
+}
+
+.fitness-news-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-news-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.news-item img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item .news-content {
+  flex: 1;
+}
+
+.news-item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.news-date {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #ff3366;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff5480;
+}
+
+.load-more-news {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #ff3366;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-news:hover {
+  background-color: #ff5480;
+}
+
+.top-news-section-right-container {
+  width: 40%;
+}
+
+/* media */
+@media (max-width: 768px) {
+  .fitness-page {
+    padding: 20px;
+  }
+
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .Fitness-page {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fitness-news-section {
+    width: 100%;
+  }
+
+  .news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fitness-page {
+    padding: 15px;
+  }
+
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
